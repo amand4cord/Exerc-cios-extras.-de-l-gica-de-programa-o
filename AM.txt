@@ -1,0 +1,143 @@
+programa {
+  funcao inicio() {
+
+
+    //1) Crie um programa onde o usuário digite um número e informe se é positivo.
+
+
+    inteiro numero
+
+
+    escreva("Digite um número: ")
+    leia(numero)
+
+
+    se(numero > 0){
+      escreva ("O número é positivo ")
+
+
+    } senao{
+      escreva("O número não é positivo ")
+    }
+
+_________________________________________________________________________
+
+programa {
+  funcao inicio() {
+
+
+    //2) Crie uma programa que verifique se uma pessoa pode dirigir. Deve ser perguntada a idade da pessoa e se ela tiver idade suficiente para dirigir
+    //(18 anos ou mais), exiba "Você pode dirigir".
+
+
+    inteiro idade
+
+
+    escreva("Digite sua idade: ")
+    leia(idade)
+
+
+    se(idade >= 18){
+      escreva("Você pode dirigir\n")
+   
+    }senao{
+      escreva("Você ainda não tem idade para dirigir!\n")
+    }
+   
+
+
+_________________________________________________________________________
+
+programa {
+  funcao inicio() {
+
+
+    // 3) Faça um programa que solicite o salário e os anos de serviço de um funcionário. Se ele tiver mais de 5 anos de serviço,
+    //dê um bônus de 5% sobre o salário.
+
+
+
+
+    real salario
+    inteiro anosServico
+
+
+    escreva("Digite seu salário: R$")
+    leia(salario)
+
+
+    escreva("Digite seus anos de serviço: ")
+    leia(anosServico)
+
+
+    se(anosServico > 5){
+      salario = salario * 1.05
+      escreva("Salário com bônus de 5% : R$ " , salario)
+   
+    }senao{
+      escreva("Você não tem direito a bônus.")
+
+
+    }
+
+_________________________________________________________________________
+
+programa {
+  funcao inicio() {
+
+
+    //4) Desenvolver um programa que receba um número inteiro e verifique se ele é múltiplo de 3. Se sim, mostrar “É múltiplo de 3!”
+
+
+    inteiro numero
+
+
+    escreva("Digite um número: ")
+    leia(numero)
+
+
+    se(numero % 3 == 0){
+      escreva("É múltiplo de 3!")
+
+
+    }senao{
+      escreva("Não é multiplo de 3.")
+    }
+
+
+________________________________________________________________________
+
+
+programa {
+  funcao inicio() {
+
+
+    //5) Crie um programa que peça ao usuário para digitar três notas individualmente (uma por vez), faça a média e caso a média seja igual ou maior que 7,
+    //mostre uma mensagem "Aprovado!".
+
+
+    real nota1 , nota2 , nota3 ,  media
+
+
+    escreva("Digite a 1° nota: ")
+    leia(nota1)
+
+
+    escreva("Digite a 2° nota: ")
+    leia(nota2)
+
+
+    escreva("Digite a 3° nota: ")
+    leia(nota3)  
+
+
+    media = (nota1 + nota2 + nota3) /3
+
+
+    se(media >= 7){
+      escreva("Aprovado!")
+   
+    }senao{
+      escreva("Reprovado.")
+    }
+
