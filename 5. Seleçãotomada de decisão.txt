@@ -1,0 +1,125 @@
+5. Seleção/tomada de decisão 
+
+_________________________________________________________________________________________________________________________
+
+programa {
+  funcao inicio() {
+
+    //5.1// Crie um programa que execute a validação de uma senha digitada pelo usuário. Caso ele digite a senha “1234” 
+    //devemos informar a ele “acesso permitido”. Para qualquer outra senha digitada, informar “acesso negado”. 
+
+    inteiro senha
+
+    escreva("Digite sua senha: ")
+    leia (senha)
+
+    se(senha == 1234){
+      escreva("Acesso permitido ")
+
+    }senao{
+      escreva("Acesso negado ")
+    }
+
+____________________________________________________________________________________________________________________________
+
+programa {
+  funcao inicio() {
+    
+    //5.2// Mano Juca bateu a cabeça e está com problemas de raciocínio... Está analisando dois números há horas e não consegue descobrir qual deles é o maior.
+    // Vamos ajuda-lo! Crie um algoritmo que leia dois números A e B e imprima o maior deles.
+
+   inteiro numeroA , numeroB , maior
+
+    escreva("Digite o número A: ")
+    leia(numeroA)
+
+    escreva("Digite o número B: ")
+    leia(numeroB)
+
+    //se(numeroA > numeroB){
+     // escreva("O número " , numeroA , " é maior que o número " , numeroB , ". " )
+    
+    se(numeroA > numeroB){
+    escreva("O maior número é: " , numeroA)
+    
+    }senao{
+      escreva("O número maior é: " , numeroB)
+    }
+
+_____________________________________________________________________________________________________________________________
+
+programa {
+  funcao inicio() {
+
+  //5.3 – Mano Juca enfrenta o rodízio de carros de São Paulo; Faça um algoritmo que leia o último número da placa do carro e mostre o dia em que ele não pode
+  // rodar pela cidade de São Paulo.
+  //Final 0 ou 1: não pode rodar na segunda-feira; 
+  // Final 2 ou 3: não pode rodar na terça-feira;
+  // Final 4 ou 5: não pode rodar na quarta-feira; 
+  // Final 6 ou 7: não pode rodar na quinta-feira; 
+  // Final 8 ou 9: não pode rodar na sexta-feira.
+
+  inteiro placa 
+
+  escreva("Digite o último número da sua placa: ")
+  leia(placa)
+
+  se(placa == 0 ou placa == 1){
+    escreva("Não pode rodar segunda-feira ")
+  }
+  se(placa == 2 ou placa == 3){
+    escreva("Não pode rodar terça-feira")
+  }
+  se(placa == 4 ou placa == 5){
+    escreva("Não pode rodar quarta-feira")
+  }
+  se(placa == 6 ou placa == 7){
+    escreva("Não pode rodar quinta-feira")
+  }
+  se(placa == 8 ou placa == 9){
+    escreva("Não pode rodar sexta-feira")
+  }
+
+__________________________________________________________________________________________________________________________________
+
+programa {
+  funcao inicio() {
+
+    // 5.4 – Mano Juca palestreiro; Faça um algoritmo que leia o nº da palestra que ele quer participar e mostre o local e o horário que ela acontecerá. 
+    //Palestras disponíveis: 1 - Animações com Scratch, laboratório 305, 19h; 2 - Scratch para gamers, laboratório 512, 20h; 3 - JavaScript para leigos,
+    // laboratório 101, 19h; 4 - Tópicos avançados de JavaScript, laboratório 305, 20h; 5 - Vida e carreira, auditório, 21h.
+
+    inteiro palestra
+
+     escreva("Palestras disponíveis:\n")
+     escreva ("1 - Animações com Scratch\n")
+     escreva("2 - Scratch para gamers\n")
+     escreva("3 - JavaScript para leigos\n")
+     escreva("4 - Tópicos avançados de JavaScript\n")
+     escreva("5 - Vida e carreira\n")
+   
+    escreva("\nDigite o número da palestra que deseja participar: ")
+    leia(palestra)
+    
+    se(palestra == 1){
+    escreva("Animações com Scratch, laboratório 305, 19h. ")
+    }
+    se(palestra == 2){
+      escreva("cratch para gamers, laboratório 512, 20h. ")
+    }
+    se(palestra == 3){
+      escreva("JavaScript para leigos, laboratório 101, 19h. ")
+    }
+    se(palestra == 4){
+      escreva("Tópicos avançados de JavaScript, laboratório 305, 20h.")
+    }
+    se(palestra == 5 ){
+      escreva("Vida e carreira, auditório, 21h.")
+    }
+    se(palestra > 5){
+    escreva("Opção inválida! Por favor, digite um número entre 1 e 5.\n")
+    }
+
+_________________________________________________________________________________________________________________________________________________________________________
+
+
