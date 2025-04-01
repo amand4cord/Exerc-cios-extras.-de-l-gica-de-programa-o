@@ -1,0 +1,58 @@
+//Heitor Tuga é um visionário, ele é um gênio da inovação. Entre os diversos projetos que ele está envolvido, por um ele tem um carinho especial: o Trajeto Pomar!
+//Este empreendimento está tomando forma no antigo sítio da sua família e convidará as pessoas a servirem-se em seu pomar, pagando na saída pelo que colherem e 
+//forem levar pra casa.Para poder realizar o primeiro teste de demanda na propriedade, Heitor está contratando pessoas para desenvolver o protótipo do seu 
+//caixa de atendimento/pagamento. Este caixa perguntará às pessoas as quantidades colhidas de cada fruta e, de acordo com a tabela de preços, vai apresentar 
+//o recibo ao cliente e o valor a ser pago.
+//Como resultado mostre as Frutas que o cliente pegou e suas quantidades, além do valor final.
+
+programa {
+  funcao inicio() {
+
+    inteiro quantidadeMaca, quantidadeLaranja, quantidadeBergamota, quantidadeBanana, quantidadePera
+    real totalMaca, totalLaranja, totalBergamota, totalBanana, totalPera, totalPago
+
+    escreva(" Fruta\n")
+    escreva ("Preço (un)\n")
+    escreva("Maçã-R$ 1,50\n")
+    escreva("Laranja-R$ 2,00\n")
+    escreva("Bergamota-R$ 1,00\n")
+    escreva("Banana-R$ 1,20\n")
+    escreva("Pera-R$ 0,50\n")
+
+    escreva("\nDigite a quantidade de maçãs escolhidas: ")
+    leia(quantidadeMaca)
+    
+    escreva("Digite a quantidade de laranjas escolhidas: ")
+    leia(quantidadeLaranja)
+    
+    escreva("Digite a quantidade de bergamotas escolhidas: ")
+    leia(quantidadeBergamota)
+    
+    escreva("Digite a quantidade de bananas escolhidas: ")
+    leia(quantidadeBanana)
+    
+    escreva("Digite a quantidade de peras escolhidas: ")
+    leia(quantidadePera)
+    
+    totalMaca = quantidadeMaca * 1.50
+    totalLaranja = quantidadeLaranja * 2.00
+    totalBergamota = quantidadeBergamota * 1.00
+    totalBanana = quantidadeBanana * 1.20
+    totalPera = quantidadePera * 0.50
+   
+    totalPago = totalMaca + totalLaranja + totalBergamota + totalBanana + totalPera
+    
+    escreva("\nRECIBO DO TRAJETO POMAR\n")
+    
+    se(quantidadeMaca > 0){
+        escreva("Maçã: ", quantidadeMaca, " x R$ 1,50 = R$ ", totalMaca, "\n")
+    }
+    se (quantidadeLaranja > 0){ 
+        escreva("Laranja: ", quantidadeLaranja, " x R$ 2,00 = R$ ", totalLaranja, "\n")
+    }
+    se (quantidadeBergamota > 0){
+        escreva("Bergamota: ", quantidadeBergamota, " x R$ 1,00 = R$ ", totalBergamota, "\n")
+    }    
+    se (quantidadeBanana > 0){
+        escreva("Banana: ", quantidadeBanana, " x R$ 1,20 = R$ " , totalBanana)
+    }
